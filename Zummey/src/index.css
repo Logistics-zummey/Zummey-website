@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+}
+
+
+
+:root {
+  --orangePrimary: #FF6B00;
+  --orangeGradient: linear-gradient(#F9B145, #FF0000);
+}
+
+html *, html *::before, html *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  
+  /* padding-bottom: 5em; */
+  
+}
+
+::-webkit-scrollbar{
+  height: 12px;
+  width: 12px;
+}
+  
+::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#F9B145, #FF0000);
+  border-radius: 20px;
+}
+
