@@ -57,6 +57,20 @@ const Hero = () => {
                 }
             })
         })
+
+        mm.add("(max-width: 639px)", () => {
+            const services = gsap.utils.toArray(`.${css.service}`);
+            services.forEach(service => {
+                gsap.to(service, {
+                    y:0,
+                    opacity: 1,
+                    scrollTrigger:{
+                        trigger:service,
+                        start:"bottom 90%",
+                    }
+                })
+            })
+        })
       }, []);
 
   return (
